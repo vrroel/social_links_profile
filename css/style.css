@@ -1,0 +1,93 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey_700: hsl(0, 0%, 20%);
+  --grey_800: hsl(0, 0%, 12%);
+  --grey_900: hsl(0, 0%, 8%);
+}
+
+/* .inter {
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    } */
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  background: var(--grey_900);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.wrapper {
+  background: var(--grey_800);
+  max-width: 300px;
+  margin: 1rem auto;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.profile_info {
+  margin-bottom: 2rem;
+}
+
+.profile_img {
+  margin-top: 1rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.location {
+  color: var(--green);
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.media_links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-self: stretch;
+}
+
+.media_links a {
+  text-decoration: none;
+  color: inherit;
+  background: var(--grey_700);
+  display: block;
+  padding: 0.8rem;
+  border-radius: 5px;
+  transition: transform .1s;
+}
+
+.media_links a:hover {
+  transform: translate(0px, 2px);
+}
+
+.media_links a:active {
+  background: var(--green);
+  color: var(--grey_900);
+}
